@@ -46,7 +46,7 @@
               <li><a class="border rounded px-2 py-1 sm:px-4 sm:py-2 text-white uppercase hover:bg-white hover:text-black" href="/">Home</a></li>
               <li><a class="border rounded px-2 py-1 sm:px-4 sm:py-2 text-white uppercase hover:bg-white hover:text-black" href="/#shows">Shows</a></li>
               <li><a class="border rounded px-2 py-1 sm:px-4 sm:py-2 text-white uppercase hover:bg-white hover:text-black" href="/#shop">Shop</a></li>
-              <li><a class="border rounded px-2 py-1 sm:px-4 sm:py-2 text-white uppercase hover:bg-white hover:text-black" href="/#contact">Contact</a></li>
+              <li><a class="border rounded px-2 py-1 sm:px-4 sm:py-2 text-white uppercase hover:bg-white hover:text-black" href="#contact">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -113,7 +113,34 @@
         </div>
       </div>
 
-      <div class="container p-8 m-auto">
+      <div class="container mb-8 m-auto">
+        <div class="mb-8 px-4">
+          <h1 id="contact" class="mb-4 text-center text-3xl font-serif">Contact</h1>
+          <p class="mb-4 max-w-lg mx-auto text-center">
+            We would love to hear from you!
+            <br>
+            You can always email us at <a class="underline" href="mailto:hello@besthayesahead.com">hello@besthayesahead.com</a>, or you can send us a message below.
+          </p>
+
+          <form class="max-w-sm mx-auto" method="POST" action="https://formspree.io/f/manwvnod">
+            <div class="mb-4">
+              <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your name</label>
+              <input type="text" id="name" name="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500" required />
+            </div>
+            <div class="mb-4">
+              <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+              <input type="email" id="email" name="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500" placeholder="name@besthayesahead.com" required />
+            </div>
+            <div class="mb-4">
+              <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your message</label>
+              <textarea id="message" rows="6" name="message" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500"></textarea>
+            </div>
+            <button type="submit" class="text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800">Submit</button>
+          </form>
+        </div>
+
+        <hr class="h-px my-8 bg-gray-200 border-0">
+
         <div class="flex justify-center text-xs">
           <a class="pr-1" href="mailto:hello@besthayesahead.com">hello@besthayesahead.com</a>
           © 2024 Best Hayes Ahead
